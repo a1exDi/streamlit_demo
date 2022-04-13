@@ -1,7 +1,9 @@
-import streamlit 
+import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
+st.title('Uber pickups in NYC')
 df = pd.read_csv('data_web.csv')
 language = df["Язык"]
 people_language = df["Носители языка, млн чел."]
